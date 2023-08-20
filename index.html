@@ -4,10 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale Landing Page Design</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Work Sans', sans-serif;
+        }
+        .card-price{
+            color: rgba(17, 17, 17, 0.50);
+        }
+
+    </style>
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/ea1dc50f72.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bannerBackground: '#F9F6E2',
+                elementColor: '#E527B2',
+                primaryColor: '#F8F8F8',
+                ratingColor: '#FFC107',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <li>tea</li>
-    <li>coffee</li>
-    <li>juice</li>
+    <header class="h-screen">
+        <!-- Banner Section -->
+        <section class="bg-bannerBackground">
+            <div class="banner grid grid-cols-1 md:grid-cols-1 justify-center items-center lg:grid-cols-2">
+                <div class="container flex flex-col justify-center items-center gap-5 lg:py-8">
+                    <h3 class="text-3xl text-center mt-8">---SALE FEVER---</h3>
+                    <h2 class="font-bold text-4xl">Purchase TK 200 or<br> above & get 
+                        <span class="text-elementColor">20% off</span></h2>
+                    <div class="sale-info flex gap-4">
+                        <h6 class="text-lg font-semibold">Use Promo Code</h6>
+                        <div class="bg-elementColor text-white p-1 rounded text-sm text-center 
+                            font-semibold">SELL200</div>
+                    </div>
+                </div>
+                <div class="image-container flex flex-col justify-center items-center">
+                    <img class="h-60 w-60 lg:h-full lg:w-auto" src="images/Summer 1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="h-screen bg-primaryColor">
+        <section class="">
+            <div class="products-section">
+                <div class="kitchen-section">
+                    <h3>Kitchenware</h3>
+                    <div class="cards grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+                        <!-- first card -->
+                        <div class="card card-compact w-80 bg-white shadow-xl p-3">
+                            <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
+                                <img class="m-3" src="images/prod1.png" alt="">
+                            </div>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="card-actions justify-end text-ratingColor">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href=""><h2 class="card-title text-xl font-semibold">K. Accessories</h2></a>
+                                <p class="card-price text-xl">39.00 TK</p>
+                            </div>
+                          </div>
+                        <!-- second card -->
+                        <div class="card card-compact w-80 bg-white shadow-xl p-3">
+                            <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
+                                <img class="m-3" src="images/prod2.png" alt="">
+                            </div>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="card-actions justify-end text-ratingColor">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href=""><h2 class="card-title text-xl font-semibold">K. Accessories</h2></a>
+                                <p class="card-price text-xl">25.00 TK</p>
+                            </div>
+                          </div>
+                        <!-- third card -->
+                        <div class="card card-compact w-80 bg-white shadow-xl p-3">
+                            <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
+                                <img class="m-3" src="images/prod3.png" alt="">
+                            </div>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="card-actions justify-end text-ratingColor">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href=""><h2 class="card-title text-xl font-semibold">Home Cooker</h2></a>
+                                <p class="card-price text-xl">49.00 TK</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="sports-products"></div>
+                <div class="furnitures-products"></div>
+            </div>
+            <div class="sales-section"></div>
+        </section>
+    </main>
 </body>
 </html>
