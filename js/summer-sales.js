@@ -21,3 +21,15 @@ function handleClick(target){
     }
 
 }
+
+function calculateDiscountPrice(){
+    const couponFieldValue = document.getElementById('couponInputId').value;
+    if("SELL200" === couponFieldValue){
+        const totalPrice = document.getElementById('totalPriceId').innerText;
+        const discountPrice = parseFloat(totalPrice) * 0.2;
+        console.log(discountPrice);
+        discountPrice = discountPrice.toFixed(2);
+        document.getElementById('discountPriceId').innerText = discountPrice.toString;
+    }
+    return;
+}

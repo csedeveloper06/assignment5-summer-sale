@@ -249,8 +249,8 @@
                         text-left pl-4 pr-10 pt-4 pb-5 ml-6 mt-2 mr-5 mb-6">
                     <h3 class="pb-3">Have coupon?</h3>
                     <div class="join ">
-                        <input class="input input-bordered join-item" placeholder="Coupon code"/>
-                        <button id="applyBtnId" class="btn join-item rounded-2xl bg-elementColor text-white" disabled>Apply</button>
+                        <input id="couponInputId" class="input input-bordered join-item" placeholder="Coupon code"/>
+                        <button id="applyBtnId" onclick="calculateDiscountPrice()" class="btn join-item rounded-2xl bg-elementColor text-white" disabled>Apply</button>
                     </div>
                </div>
                <div class="salesItems w-80 bg-white flex flex-col justify-center items-center gap-3 
@@ -262,14 +262,29 @@
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8">Total price: 
                             <span id="totalPriceId" class="card-price">0.00</span>TK</h3>
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8">Discount : 
-                            <span class="card-price">0.00TK</span></h3>
+                            <span id="discountPriceId" class="card-price">0.00</span>TK</h3>
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8 pb-8">Total: 
-                            <span class="card-price">0.00 TK</span></h3>
+                            <span id="discountTotalPriceId" class="card-price">0.00</span>TK</h3>
 
                         <hr>
-
+                         <!-- Open the modal using ID.showModal() method -->
+                        <!-- <button  class="btn bg-elementColor text-white text-center
+                            w-full mt-4" disabled>Make Purchase</button> -->
                         <button id="purchaseId" class="btn bg-elementColor text-white text-center
-                            w-full mt-4" disabled>Make Purchase</button>
+                        w-full mt-4" disabled" onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-3">
+                                <img src="images/congo.png" alt="">
+                                <h3 class="font-bold text-lg">Congratulations</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn bg-elementColor text-white text-center">Go Home</button>
+                                </div>
+                            </form>
+                        </dialog>
+                       
+                                
                     </div>
                </div>
             </div>
