@@ -22,6 +22,10 @@ function handleClick(target){
 
 }
 
+function goHome() {
+    window.location.href="index.html";
+}
+
 function calculateDiscountPrice(){
     const couponFieldValue = document.getElementById('couponInputId').value;
     if("SELL200" === couponFieldValue){
