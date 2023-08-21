@@ -12,5 +12,12 @@ function handleClick(target){
     total = total.toFixed(2);
     console.log(total);
     document.getElementById('totalPriceId').innerText = total;
+    if(total > 0){
+        document.getElementById("purchaseId").disabled = false;
+    }
+
+    if(total>= 200){
+        document.getElementById("applyBtnId").disabled = false;
+    }
 
 }
