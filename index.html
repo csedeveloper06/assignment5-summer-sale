@@ -73,12 +73,13 @@
                 <div class="kitchen-section">
                     <h3 class="text-4xl font-semibold text-center p-3 ml-9 mt-5 mb-3 
                             lg:text-left">Kitchenware</h3>
-                    <div class="cards mx-auto grid grid-cols-1 md:grid-cols-1 
+                    <div class="cards  grid grid-cols-1 md:grid-cols-1 
                             lg:flex justify-evenly items-center gap-3">
                         <!-- first card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod1.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod1Id" class="m-3" 
+                                    src="images/prod1.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -88,14 +89,14 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">K. Accessories</h2></a>
-                                <p class="card-price text-xl">39.00 TK</p>
+                                <h2 class="card-title text-lg font-semibold">K. Accessories</h2>
+                                <p class="card-price text-xl"><span id="">39.00</span> TK</p>
                             </div>
                         </div>
                         <!-- second card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod2.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod2Id" class="m-3" src="images/prod2.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -105,14 +106,14 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">K. Accessories</h2></a>
+                                <h2 class="card-title text-lg font-semibold">K. Accessories</h2>
                                 <p class="card-price text-xl">25.00 TK</p>
                             </div>
                           </div>
                         <!-- third card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod3.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod3Id" class="m-3" src="images/prod3.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -122,7 +123,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Home Cooker</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Home Cooker</h2>
                                 <p class="card-price text-xl">49.00 TK</p>
                             </div>
                           </div>
@@ -130,12 +131,12 @@
                 </div>
                 <div class="sports-section">
                     <h3 class="text-4xl font-semibold text-center p-3 ml-9 mt-5 mb-3 lg:text-left">Sportswear</h3>
-                    <div class="cards grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 mx-auto
-                            lg:flex justify-evenly items-center gap-3">
+                    <div class="cards grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 
+                            lg:flex justify-evenly items-center lg:gap-3">
                         <!-- first card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod4.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod4Id" class="m-3" src="images/prod4.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -145,14 +146,14 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Sports Back Cap</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Sports Back Cap</h2>
                                 <p class="card-price text-xl">49.00 TK</p>
                             </div>
                           </div>
                         <!-- second card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod5.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod5Id" class="m-3" src="images/prod5.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -162,14 +163,14 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Full Jersey Set</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Full Jersey Set</h2>
                                 <p class="card-price text-xl">69.00 TK</p>
                             </div>
                           </div>
                         <!-- third card -->
                         <div class="card card-compact w-80 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod6.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod6Id" class="m-3" src="images/prod6.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -179,7 +180,7 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Sports cates</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Sports cates</h2>
                                 <p class="card-price text-xl">159.00 TK</p>
                             </div>
                           </div>
@@ -187,12 +188,12 @@
                 </div>
                 <div class="furniture-section">
                     <h3 class="text-4xl font-semibold text-center p-3 ml-9 mt-5 mb-3 lg:text-left">Furniture</h3>
-                    <div class="cards grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mx-auto
-                            lg:flex justify-evenly items-center gap-3">
+                    <div class="cards grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 
+                            lg:flex justify-evenly items-center lg: gap-3">
                         <!-- first card -->
                         <div class="card card-compact w-60 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod7.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod7Id" class="m-3" src="images/prod7.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -202,14 +203,14 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Single Relax Chair</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Single Relax Chair</h2>
                                 <p class="card-price text-xl">185.00 TK</p>
                             </div>
                         </div>
                         <!-- second card -->
                         <div class="card card-compact w-60 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                               <a href="#"> <img class="m-3" src="images/prod8.png" alt=""></a>
+                               <a href="#"> <img onclick="handleClick(this)" id="prod8Id" class="m-3" src="images/prod8.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -219,14 +220,14 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Children play</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Children play</h2>
                                 <p class="card-price text-xl">299.00 TK</p>
                             </div>
                         </div>
                         <!-- third card -->
                         <div class="card card-compact w-60 bg-white shadow-xl p-3 mx-auto">
                             <div class="card-image bg-primaryColor flex flex-col justify-center items-center">
-                                <a href="#"><img class="m-3" src="images/prod9.png" alt=""></a>
+                                <a href="#"><img onclick="handleClick(this)" id="prod9Id" class="m-3" src="images/prod9.png" alt=""></a>
                             </div>
                             <div class="card-body flex flex-col justify-center items-center">
                                 <div class="card-actions justify-end text-ratingColor">
@@ -236,7 +237,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                                <a href=""><h2 class="card-title text-lg font-semibold">Flexible Sofa</h2></a>
+                                <h2 class="card-title text-lg font-semibold">Flexible Sofa</h2>
                                 <p class="card-price text-xl">339.00 TK</p>
                             </div>
                         </div>
@@ -259,7 +260,7 @@
                         <hr>
 
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8">Total price: 
-                            <span class="card-price"> 0.00TK</span></h3>
+                            <span id="totalPriceId" class="card-price">0.00</span>TK</h3>
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8">Discount : 
                             <span class="card-price">0.00TK</span></h3>
                         <h3 class="text-xl  font-medium pl-6 pt-3 pr-8 pb-8">Total: 
@@ -274,5 +275,6 @@
             </div>
         </section>
     </main>
+    <script src="js/summer-sales.js"></script>
 </body>
 </html>
