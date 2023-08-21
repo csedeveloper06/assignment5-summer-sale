@@ -240,26 +240,30 @@
                 </div>
             </div>
             <div class="sales-section flex flex-col gap-5 mt-4">
-               <div id="couponsId" class="coupon bg-white">
-                    <h3>Have coupon?</h3>
+               <div id="couponsId" class="coupon bg-white text-2xl font-medium text-left pl-6 pt-5 pb-5 ml-6 mt-5 mr-5 mb-6">
+                    <h3 class="pb-3">Have coupon?</h3>
                     <div class="join ">
                         <input class="input input-bordered join-item" placeholder="Coupon code"/>
                         <button class="btn join-item rounded-2xl bg-elementColor text-white">Apply</button>
                     </div>
                </div>
-               <div class="salesItems flex flex-col justify-center items-center gap-3">
-                    <div id="itemsId" class="items bg-white">Items</div>
-                    <div id="itemsPricesId" class="salesPrice bg-white">
+               <div class="salesItems bg-white flex flex-col justify-center items-center gap-3 
+                    pb-3 ml-6 mt-5 mr-5 mb-6 rounded-5xl">
+                    <div id="itemsId" class="items bg-white p-5 text-2xl  font-medium"></div>
+                    <div id="itemsPricesId" class="salesPrice bg-white pl-6 pt-8 pb-10 pr-5">
                         <hr>
 
-                        <h3>Total price: 0.00TK</h3>
-                        <h3>Discount : 0.00TK</h3>
-                        <h3>Total: 0.00 TK</h3>
+                        <h3 class="text-2xl  font-medium pl-6 pt-3 pr-8">Total price: 
+                            <span class="card-price"> 0.00TK</span></h3>
+                        <h3 class="text-2xl  font-medium pl-6 pt-3 pr-8">Discount : 
+                            <span class="card-price">0.00TK</span></h3>
+                        <h3 class="text-2xl  font-medium pl-6 pt-3 pr-8 pb-8">Total: 
+                            <span class="card-price">0.00 TK</span></h3>
 
                         <hr>
 
-                        <button id="purchaseId" class="btn bg-elementColor text-white 
-                            w-full">Make Purchase</button>
+                        <button id="purchaseId" class="btn bg-elementColor text-white text-center
+                            w-full mt-4">Make Purchase</button>
                     </div>
                </div>
             </div>
