@@ -29,11 +29,19 @@ function goHome() {
 function calculateDiscountPrice(){
     const couponFieldValue = document.getElementById('couponInputId').value;
     if("SELL200" === couponFieldValue){
-        const totalPrice = document.getElementById('totalPriceId').innerText;
-        const discountPrice = parseFloat(totalPrice) * 0.2;
-        console.log(discountPrice);
-        discountPrice = discountPrice.toFixed(2);
-        document.getElementById('discountPriceId').innerText = discountPrice.toString;
+       const totalPrice = document.getElementById('totalPriceId').innerText;
+       const discountResult = parseFloat(totalPrice) * parseFloat(0.2);
+       const fixedDiscountResult = discountResult.toFixed(2);
+       document.getElementById('discountPriceId').innerText = fixedDiscountResult.toString();
+       const discountPrice = document.getElementById('discountPriceId').innerText;
+       const discountWithTotalPrice = parseFloat(totalPrice) - parseFloat(discountPrice); 
+       const fixedDiscountWithTotalPrice = discountWithTotalPrice.toFixed(2); 
+       console.log(fixedDiscountWithTotalPrice);
+       document.getElementById('discountTotalPriceId').innerText = fixedDiscountWithTotalPrice.toString();
+       console.log(document.getElementById('h3discountTotalPriceId').innerText);
     }
-    return;
+    else{
+        return alert("please provide valid input");
+    }
+   
 }
