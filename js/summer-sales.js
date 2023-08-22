@@ -36,9 +36,7 @@ function calculateDiscountPrice(){
        const discountPrice = document.getElementById('discountPriceId').innerText;
        const discountWithTotalPrice = parseFloat(totalPrice) - parseFloat(discountPrice); 
        const fixedDiscountWithTotalPrice = discountWithTotalPrice.toFixed(2); 
-       console.log(fixedDiscountWithTotalPrice);
        document.getElementById('discountTotalPriceId').innerText = fixedDiscountWithTotalPrice.toString();
-       console.log(document.getElementById('h3discountTotalPriceId').innerText);
     }
     else{
         return alert("please provide valid input");
